@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Planilha</title>
+</head>
+<body>
+    <h1>Envie sua planilha</h1>
+    <form action="/upload_excel" method="POST" enctype="multipart/form-data">
+        <label for="file">Escolha um arquivo Excel:</label>
+        <input type="file" name="file" accept=".xlsx" required>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

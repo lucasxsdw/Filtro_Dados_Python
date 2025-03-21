@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtragem de Dados</title>
+</head>
+<body>
+    <h1>Filtrar Dados por Data</h1>
+    <form method="GET" action="/filtragem">
+        <label for="data_inicio">Data Início:</label>
+        <input type="date" id="data_inicio" name="data_inicio">
+
+        <label for="data_fim">Data Fim:</label>
+        <input type="date" id="data_fim" name="data_fim">
+
+        <button type="submit">Filtrar</button>
+    </form>
+
+    <h2>Dados Filtrados</h2>
+    {{ tabela|safe }}
+
+    <br>
+    <a href="/">Voltar ao Início</a>
+</body>
+</html>
